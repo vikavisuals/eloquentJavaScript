@@ -30,4 +30,12 @@ while (number < 100) {
 // CHESSBOARD
 
 const size = 8;
+let board = "";
 
+for (let i = 0; i < size; i++) {
+  board += "\n";
+  for (let i = 0; i < size / 2; i++) {
+    board += " #";
+  }
+}
+console.log(board);
