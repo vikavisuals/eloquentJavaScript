@@ -32,10 +32,14 @@ while (number < 100) {
 const size = 8;
 let board = "";
 
-for (let i = 0; i < size; i++) {
-  board += "\n";
-  for (let i = 0; i < size / 2; i++) {
-    board += " #";
+for (let n = 0; n < size; n++) {
+  for (let i = 0; i < size; i++) {
+    if ((n + i) % 2 == 0){
+      board += "#";
+    } else {
+      board += " ";
+    }
   }
-}
+  board += "\n";
+};
 console.log(board);
