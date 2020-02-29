@@ -45,6 +45,7 @@ function isEven(n) {
 // BEAN COUNTING
 
 let numB = 0;
+let char = 0;
 
 function countB (str) {
   for (let i = 0; i < str.length; i++) {
@@ -53,5 +54,15 @@ function countB (str) {
     }
   }
   return numB;
-}
+};
 console.log(countB("BaBy Back riBs"));
+
+function countChar (str, letter) {
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === letter) {
+      char += 1;
+    }
+  }
+  return char;
+};
+console.log(countChar("HellLLo Letter L", "L"));
