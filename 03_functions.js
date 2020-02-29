@@ -39,3 +39,19 @@ function isEven(n) {
   else return isEven(n - 2);
 }
 */
+
+
+
+// BEAN COUNTING
+
+let numB = 0;
+
+function countB (str) {
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "B") {
+      numB += 1;
+    }
+  }
+  return numB;
+}
+console.log(countB("BaBy Back riBs"));
