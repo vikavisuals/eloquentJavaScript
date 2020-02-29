@@ -8,6 +8,11 @@ for (let i = 0; i < 7; i++) {
   console.log(hash);
 }
 
+/* Book Solution -
+for (let line = "#"; line.length < 8; line += "#")
+console.log(line); */
+
+
 
 //FIZZBUZZ
 
@@ -26,6 +31,15 @@ while (number < 100) {
   number++;
 };
 
+/* Book Solution -
+for (let n = 1; n <= 100; n++) {
+  let output = "";
+  if (n % 3 == 0) output += "Fizz";
+  if (n % 5 == 0) output += "Buzz";
+  console.log(output || n);
+} */
+
+
 
 // CHESSBOARD
 
@@ -43,3 +57,19 @@ for (let n = 0; n < size; n++) {
   board += "\n";
 };
 console.log(board);
+
+/* Book Solution - 
+let size = 8;
+let board = "";
+
+for (let y = 0; y < size; y++) {
+  for (let x = 0; x < size; x++) {
+    if ((x + y) % 2 == 0) {
+      board += " ";
+    } else {
+      board += "#";
+    }
+  }
+  board += "\n";
+}
+console.log(board); */
